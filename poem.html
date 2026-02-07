@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rhythm House | Kids Poems</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: system-ui, sans-serif;
+    }
+
+    
+.navbar {
+  
+
+  background: linear-gradient(135deg, #000000, #8b0000);
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.navbar h1{
+  color: red;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  
+}
+
+.dropdown-menu {
+  background: linear-gradient(135deg, #000000, #8b0000);
+
+}
+
+
+    .page-title {
+        background: linear-gradient(135deg, #000000, #8b0000);
+      padding: 50px 0 30px;
+      text-align: center;
+    }
+
+    .page-title h1 {
+      color: red;
+      font-weight: 600;
+    }
+
+    .page-title p {
+      color: grey;
+      font-size: 15px;
+    }
+
+    .kids-card {
+      background: black;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform .2s ease;
+    }
+
+    .kids-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .thumb {
+      position: relative;
+    }
+
+    .thumb img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .play {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      background: rgba(0,0,0,.35);
+    }
+
+    .video-info {
+      padding: 12px 14px;
+    }
+
+    .video-info h6 {
+      margin: 0;
+      font-size: 0.95rem;
+      color: rgb(255, 57, 57);
+    }
+
+    .video-info small {
+      color: grey;
+    }
+
+  
+
+.footer {
+  background: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px 20px;
+  text-align: center;
+
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-brand h2 {
+  color: red;
+  font-size: 24px;
+}
+
+
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links ul li a {
+  color: rgb(160, 159, 159);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: red;
+}
+
+.footer-contact .social a {
+  margin: 0 5px;
+  padding: 6px 10px;
+  background: black;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-contact .social a:hover {
+  background: red;
+}
+
+.footer-bottom {
+  font-size: 13px;
+  color: rgb(160, 159, 159);
+}
+  </style>
+</head>
+
+<body>
+
+
+  
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <!-- <a class="navbar-brand d-flex align-items-center" href="#home-page">
+      <img src="./assets/ChatGPT Image Feb 2, 2026, 08_28_55 PM.png"
+           alt="Rhythm House"
+           style="height:80px !important;width: 200px;"
+           class="me-2">
+    </a> -->
+      <h1>Rhythm House </h1>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+  <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="./index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="./index.html#shop">Shop</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="./index.html#about-us">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="./index.html#contat-us">Contact Us</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-danger" href="#"
+            id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown">
+            Album
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="./pop.html">POP</a></li>
+            <li><a class="dropdown-item" href="./indian.html">INDIAN</a></li>
+            <li><a class="dropdown-item" href="./poem.html">POEMS</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./movie.html">MOVIES</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Search -->
+      <form class="d-flex ms-lg-3">
+        <input class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          style="background:#111;color:white;border:1px solid #dc3545;">
+        <button class="btn btn-outline-danger" type="submit">Search</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+
+  <!-- Page Heading -->
+  <div class="page-title">
+    <h1>Kids Poems</h1>
+    <p>Fun rhymes & songs for kids</p>
+  </div>
+
+  <!-- Kids Poems Grid -->
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="kids-card">
+          <div class="thumb">
+            <img src="./assets/OIP.webp" alt="">
+            <div class="play">▶</div>
+          </div>
+          <div class="video-info">
+            <h6>Baby Shark</h6>
+            <small>1.8B views • 2 min</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="kids-card">
+          <div class="thumb">
+            <img src="./assets/johny johny.webp" alt="">
+            <div class="play">▶</div>
+          </div>
+          <div class="video-info">
+            <h6>Johny Johny Yes Papa</h6>
+            <small>1.3B views • 3 min</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="kids-card">
+          <div class="thumb">
+            <img src="./assets/twinkle twinkle.jpg" alt="">
+            <div class="play">▶</div>
+          </div>
+          <div class="video-info">
+            <h6>Twinkle Twinkle Little Star</h6>
+            <small>900M views • 2 min</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="kids-card">
+          <div class="thumb">
+            <img src="./assets/wheels on the bus.jpg" alt="">
+            <div class="play">▶</div>
+          </div>
+          <div class="video-info">
+            <h6>Wheels on the Bus</h6>
+            <small>870M views • 3 min</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="kids-card">
+          <div class="thumb">
+            <img src="./assets/humpty dumpty.webp" alt="">
+            <div class="play">▶</div>
+          </div>
+          <div class="video-info">
+            <h6>Humpty Dumpty</h6>
+            <small>520M views • 2 min</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="kids-card">
+          <div class="thumb">
+            <img src="./assets/baa black sheep.webp" alt="">
+            <div class="play">▶</div>
+          </div>
+          <div class="video-info">
+            <h6>Baa Baa Black Sheep</h6>
+            <small>610M views • 2 min</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <!-- <FOOTER SECTION START --> 
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2>Rhythm <span>House</span></h2>
+        <p>Music • Movies • Live Concerts</p>
+      </div>
+
+     <div class="footer-links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="./index.html#home-page">Home</a></li>
+          <li><a href="./index.html#shop">Shop</a></li>
+          <li><a href="./index.html#about-us">About us</a></li>
+          <li><a href="./index.html#contact-us">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>RhythmHouse@gmail.com</p>
+        <div class="social">
+          <i class="fa-brands fa-square-x-twitter"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-whatsapp"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Rhythm House. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- footer section end -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rhythm House | Pop Music</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+.navbar {
+  
+
+  background: linear-gradient(135deg, #000000, #8b0000);
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.navbar h1{
+  color: red;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  
+}
+
+.dropdown-menu {
+  background: linear-gradient(135deg, #000000, #8b0000);
+
+}
+
+   
+    .page-header {
+      background: linear-gradient(135deg, #000000, #8b0000);
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: 50px;
+      font-weight: bold;
+      color: red;
+    }
+
+    .page-header p {
+      color: rgb(165, 164, 164);
+      margin-top: 10px;
+    }
+
+    /* Card Styling */
+    .music-card {
+      background-color: black;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .music-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(255, 0, 0, 0.3);
+    }
+
+    .music-card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .music-card h5 {
+      color: #ff1e1e;
+      font-weight: 600;
+    }
+
+    .music-card p {
+      font-size: 15px;
+      color: #bbbbbb;
+    }
+
+    .play-btn {
+      background-color: red;
+      border: none;
+      border-radius: 50px;
+      padding: 6px 18px;
+      color: #fff;
+      font-size: 0.85rem;
+    }
+
+    .play-btn:hover {
+      background-color: rgb(156, 1, 1);
+    }
+
+  
+
+.footer {
+  background: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px 20px;
+  text-align: center;
+
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-brand h2 {
+  color: red;
+  font-size: 24px;
+}
+
+
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links ul li a {
+  color: rgb(160, 159, 159);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: red;
+}
+
+.footer-contact .social a {
+  margin: 0 5px;
+  padding: 6px 10px;
+  background: black;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-contact .social a:hover {
+  background: red;
+}
+
+.footer-bottom {
+  font-size: 13px;
+  color: rgb(160, 159, 159);
+}
+  </style>
+</head>
+
+<body>
+
+
+<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <!-- <a class="navbar-brand d-flex align-items-center" href="#home-page">
+      <img src="./assets/ChatGPT Image Feb 2, 2026, 08_28_55 PM.png"
+           alt="Rhythm House"
+            style="height:80px !important;width: 200px;"
+           class="me-2">
+    </a> -->
+      <h1>Rhythm House </h1>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="./index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="./index.html#shop">Shop</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="./index.html#about-us">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="./index.html#contat-us">Contact Us</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-danger" href="#"
+            id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown">
+            Album
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="./pop.html">POP</a></li>
+            <li><a class="dropdown-item" href="./indian.html">INDIAN</a></li>
+            <li><a class="dropdown-item" href="./poem.html">POEMS</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./movie.html">MOVIES</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Search -->
+      <form class="d-flex ms-lg-3">
+        <input class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          style="background:#111;color:white;border:1px solid #dc3545;">
+        <button class="btn btn-outline-danger" type="submit">Search</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+
+<!-- Header -->
+<section class="page-header">
+  <h1>Pop Music</h1>
+  <p>Discover trending, classic & international pop hits</p>
+</section>
+
+<!-- Pop Music Grid -->
+<div class="container my-5">
+  <div class="row g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card music-card">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" class="card-img-top" alt="Trending Pop">
+        <div class="card-body">
+          <h5>Trending Pop</h5>
+          <p>Top chart pop songs loved worldwide.</p>
+          <button class="play-btn">Play Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card music-card">
+        <img src="./assets/classic pop.webp" class="card-img-top" alt="Classic Pop">
+        <div class="card-body">
+          <h5>Classic Pop</h5>
+          <p>Timeless pop music from legendary artists.</p>
+          <button class="play-btn">Play Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card music-card">
+        <img src="./assets/international pop.webp" class="card-img-top" alt="International Pop">
+        <div class="card-body">
+          <h5>International Pop</h5>
+          <p>Global pop hits from around the world.</p>
+          <button class="play-btn">Play Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-4">
+      <div class="card music-card">
+        <img src="./assets/pop rock.webp" class="card-img-top" alt="Pop Rock">
+        <div class="card-body">
+          <h5>Pop Rock</h5>
+          <p>Energetic blend of pop melodies & rock vibes.</p>
+          <button class="play-btn">Play Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col-md-4">
+      <div class="card music-card">
+        <img src="./assets/dance pop.webp" class="card-img-top" alt="Dance Pop">
+        <div class="card-body">
+          <h5>Dance Pop</h5>
+          <p>Upbeat pop tracks perfect for parties.</p>
+          <button class="play-btn">Play Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="col-md-4">
+      <div class="card music-card">
+        <img src="./assets/indie pop.webp" class="card-img-top" alt="Indie Pop">
+        <div class="card-body">
+          <h5>Indie Pop</h5>
+          <p>Fresh, creative pop from indie artists.</p>
+          <button class="play-btn">Play Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- <FOOTER SECTION START --> 
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2>Rhythm <span>House</span></h2>
+        <p>Music • Movies • Live Concerts</p>
+      </div>
+
+    <div class="footer-links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="./index.html#home-page">Home</a></li>
+          <li><a href="./index.html#shop">Shop</a></li>
+          <li><a href="./index.html#about-us">About us</a></li>
+          <li><a href="./index.html#contact-us">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>RhythmHouse@gmail.com</p>
+        <div class="social">
+          <i class="fa-brands fa-square-x-twitter"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-whatsapp"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Rhythm House. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- footer section end -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
